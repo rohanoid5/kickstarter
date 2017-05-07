@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary300">#006cd6</color>
+    <color name="colorPrimary400">#005cb8</color>
+    <color name="colorPrimary">#004d99</color>
+    <color name="colorPrimaryDark">#002e5c</color>
+    <color name="colorPrimary600">#003e7a</color>
+    <color name="colorAccent">#e74c3c</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="aluminum">#999999</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="approved">#1fa120</color>
+    <color name="rejected">#a11f1f</color>
+    <color name="alphaPrimary">#40004D99</color>
+    <color name="snack_yellow">#FFEB3B</color>
+    <color name="overlay_color">#10000000</color>
+
+    <!--used for theming sweet alert dialog-->
+    <color name="black_overlay">#66000000</color>
+    <color name="blue_btn_bg_color">@color/colorPrimary</color>
+    <color name="blue_btn_bg_pressed_color">@color/colorPrimary300</color>
+    <color name="gray_btn_bg_color">#e74c3c</color>
+    <color name="warning_red">#B71C1C</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <color name="light">#18FFFFFF</color>
+    <color name="dark">#15000000</color>
+    <color name="sub_text">#AAFFFFFF</color>
+
+    <color name="text_color">#222222</color>
+    <color name="menu_fragment_background">#D3000000</color>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- List preference display values -->
+    <string-array name="pref_sortBy_entries">
+        <item>@string/pref_sortBy_default_label</item>
+        <item>@string/pref_sortBy_date_label</item>
+    </string-array>
+    <!-- List preference select values -->
+    <string-array name="pref_sortBy_values">
+        <item>@string/pref_sortBy_default</item>
+        <item>@string/pref_sortBy_date</item>
+    </string-array>
+    <!-- List preference display values -->
+    <string-array name="pref_filterBy_entries">
+        <item>@string/pref_filterBy_more_label</item>
+        <item>@string/pref_filterBy_less_label</item>
+    </string-array>
+    <!-- List preference select values -->
+    <string-array name="pref_filterBy_values">
+        <item>@string/pref_filterBy_more</item>
+        <item>@string/pref_filterBy_less</item>
+    </string-array>
+</resources>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_fragment_background"
+    android:orientation="vertical"
+    tools:context="rohan.app.com.kickstarter.Activity.ProjectDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ToolBarStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_view_background"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:theme="@style/AppTheme.Light"
+            card_view:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/blurb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/jet"
+                    android:textSize="16sp"
+                    tools:text="A unique handmade picture book for kids &amp; art lovers about a nervous monster who finds his courage with the help of a brave little girl" />
+
+                <TextView
+                    android:id="@+id/by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.8"
+                    android:gravity="end"
+                    android:textColor="@color/jet"
+                    tools:text="By Tyrone Wells &amp; Broken Eagle, LLC" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_flag_white_24dp"
+                            android:gravity="center"
+                            android:text="Country"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/country"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:textColor="@color/white"
+                            tools:text="USA" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_location_on_white_24dp"
+                            android:gravity="center"
+                            android:text="Location"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:textColor="@color/white"
+                            tools:text="Los Angeles, CA" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_map_white_24dp"
+                            android:gravity="center"
+                            android:text="State"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/state"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:textColor="@color/white"
+                            tools:text="CA" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_info_white_24dp"
+                            android:gravity="center"
+                            android:text="type"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:textColor="@color/white"
+                            tools:text="Town" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_monetization_on_white_24dp"
+                            android:gravity="center"
+                            android:text="Amount Pledged"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/amt_pledged"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:textColor="@color/white"
+                            tools:text="$ 17906" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_link_white_24dp"
+                            android:gravity="center"
+                            android:text="Project link"
+                            android:textColor="@color/white" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/url_button"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:text="Click Here"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:padding="0dp"
+                            style="?android:attr/borderlessButtonStyle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:drawableTop="@drawable/ic_face_white_24dp"
+                            android:gravity="center"
+                            android:text="Backed by"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/backed"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:gravity="center|end"
+                            android:textColor="@color/white"
+                            tools:text="340" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

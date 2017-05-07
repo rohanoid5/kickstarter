@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_graph"
+        android:title="Graph"
+        android:icon="@drawable/ic_bubble_chart_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"
+        />
+
+</menu>

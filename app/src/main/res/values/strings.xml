@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KickStarter</string>
+    <string name="pref_sortBy_default" translatable="false">default</string>
+    <string name="pref_sortBy_date" translatable="false">due</string>
+    <string name="pref_sortBy_default_label">Name</string>
+    <string name="pref_sortBy_date_label">End Date</string>
+    <string name="pref_sortOrder_title">Sort Order</string>
+    <string name="pref_sortBy_title">Sort By:</string>
+    <string name="pref_sortBy_key" translatable="false">sort</string>
+    <string name="pref_summary">Choose an order to sort the Projects.</string>
+    <string name="pref_filterBy_default" translatable="false">default</string>
+    <string name="pref_filterBy_more" translatable="false">10000</string>
+    <string name="pref_filterBy_less" translatable="false">1000</string>
+    <string name="pref_filterBy_default_label">Default</string>
+    <string name="pref_filterBy_more_label">More than 100,000</string>
+    <string name="pref_filterBy_less_label">Less than 100,000</string>
+    <string name="pref_filterOrder_title">Filter</string>
+    <string name="pref_filterBy_title">Filter By Pledge Amount:</string>
+    <string name="pref_filterBy_key" translatable="false">filter</string>
+    <string name="pref_filter_summary">Choose a pledge amount to filter by.</string>
+</resources>

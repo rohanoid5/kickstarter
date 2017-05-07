@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_cprimary"
+    tools:context="rohan.app.com.kickstarter.Activity.MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/cl"
+        tools:context="rohan.app.com.kickstarter.Activity.MainActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            tools:listitem="@layout/list_item_projects" />
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+
+        <com.claudiodegio.msv.MaterialSearchView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"></com.claudiodegio.msv.MaterialSearchView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/graph"
+        android:background="@drawable/card_view_background"
+        card_view:cardCornerRadius="2dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:visibility="gone"
+        android:theme="@style/AppTheme.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:id="@+id/title"
+                android:text="Amount Pledged vs Number of Backers"/>
+
+            <com.github.mikephil.charting.charts.ScatterChart
+                android:id="@+id/chart"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:padding="0dp"
+                style="?android:attr/borderlessButtonStyle" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>
